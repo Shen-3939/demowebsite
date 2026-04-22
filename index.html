@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ARR Hospital – Gynaecology & Pediatric Care, Tuticorin</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords"
+        content="ARR Hospital, Gynaecologist in Tuticorin, Child Care Hospital, Maternity Hospital, Pediatrics">
+    <meta name="description"
+        content="ARR Hospital provides expert care for women and children including pregnancy, delivery and pediatric services in Tuticorin.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Arr hospital favicon.png">
+    <link rel="apple-touch-icon" href="img/Arr hospital favicon.png">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ARR Hospital – Gynaecology & Pediatric Care, Tuticorin">
+    <meta property="og:description"
+        content="ARR Hospital provides expert care for women and children including pregnancy, delivery and pediatric services in Tuticorin. Trusted by families for safe motherhood and healthy childhood.">
+    <meta property="og:image" content="img/ARR Hospital - Tuticorin.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arrhospital.in/">
+    <meta property="og:site_name" content="ARR Hospital">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ── Hero Image Slider ── */
+        .hero-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .hero-slide {
+            position: relative;
+            width: 100%;
+            min-height: 720px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-slide::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0, 30, 80, 0.55) 40%, rgba(0, 80, 160, 0.30) 100%);
+            z-index: 1;
+        }
+
+        .hero-caption {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .hero-slider .owl-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        .hero-slider .owl-nav button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.18) !important;
+            border: 2px solid rgba(255, 255, 255, 0.5) !important;
+            color: #fff !important;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 20px;
+            line-height: 1;
+            transition: all 0.3s;
+        }
+
+        .hero-slider .owl-nav button:hover {
+            background: rgba(255, 255, 255, 0.35) !important;
+        }
+
+        .hero-slider .owl-prev {
+            left: 20px;
+        }
+
+        .hero-slider .owl-next {
+            right: 20px;
+        }
+
+        /* ── Doctor Message ── */
+        .doctor-message-img {
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 40, 120, 0.14);
+        }
+
+        .doctor-message-img img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+
+        .quote-icon {
+            font-size: 4rem;
+            color: var(--bs-primary);
+            opacity: 0.15;
+            line-height: 1;
+        }
+
+        /* ── Doctor Expert Cards ── */
+        .doctor-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 1rem;
+            padding: 1.5rem 1.25rem;
+            text-align: center;
+            backdrop-filter: blur(6px);
+            transition: transform 0.3s, background 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        .doctor-card:hover {
+            transform: translateY(-6px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .doctor-card .doctor-icon-wrap {
+            width: 64px;
+            height: 64px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.6rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+
+        .doctor-card h5 {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .doctor-card p {
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 0.84rem;
+            margin-bottom: 0;
+            margin-top: auto;
+        }
+
+        /* ── ARR Difference ── */
+        .diff-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1.1rem 1.25rem;
+            background: #fff;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 12px rgba(0, 40, 120, 0.07);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .diff-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 40, 120, 0.13);
+        }
+
+        .diff-check {
+            flex-shrink: 0;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--bs-primary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        /* ── Infrastructure Carousel ── */
+        .infra-carousel-wrap {
+            position: relative;
+        }
+
+        .infra-carousel .owl-item img {
+            border-radius: 0.75rem;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .infra-carousel .owl-nav {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .infra-carousel .owl-nav button {
+            background: var(--bs-primary) !important;
+            color: #fff !important;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: all 0.3s;
+            pointer-events: all;
+            box-shadow: 0 0 0 8px rgba(13, 110, 253, 0.18), 0 4px 16px rgba(0, 40, 120, 0.18);
+        }
+
+        .infra-carousel .owl-nav button:hover {
+            background: rgba(13, 110, 253, 0.9) !important;
+            box-shadow: 0 0 0 10px rgba(13, 110, 253, 0.25), 0 6px 20px rgba(0, 40, 120, 0.22);
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand p-0"><img src="img/ARR Hospital - Tuticorin.png"
+                        alt="ARR Hospital Logo" class="navbar-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-0 mx-lg-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Our Specialities</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="gynaecology.html" class="dropdown-item">Gynaecology</a>
+                                <a href="pediatrics.html" class="dropdown-item">Pediatrics</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                    <a href="tel:+918300646102"
+                        class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                        data-wow-delay=".9s">
+                        <i class="fa fa-phone-alt"></i>
+                        <div class="position-absolute" style="top: 7px; right: 12px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                    <div class="d-flex flex-column ms-3">
+                        <span>Call to Our Experts</span>
+                        <a href="tel:+918300646102"><span class="text-dark">+91 83006 46102</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- HERO IMAGE SLIDER -->
+    <div class="hero-slider owl-carousel" id="heroSlider">
+
+        <!-- Slide 1 -->
+        <div class="hero-slide" style="background-image: url('img/slider-1-ARRHospital.jpg');">
+            <div class="hero-caption py-5">
+                <div class="container">
+                    <div class="row align-items-center py-5">
+                        <div class="col-lg-7 animated fadeInLeft">
+                            <h5 class="text-white text-uppercase fw-semibold mb-3"
+                                style="letter-spacing:2px; opacity:0.85;">Welcome to ARR Hospital</h5>
+                            <h1 class="display-3 fw-bold text-white mb-4" style="line-height:1.15;">Expert Care
+                                for<br>Women & Children</h1>
+                            <p class="fs-5 mb-4" style="color:rgba(255,255,255,0.88);">Specialist gynaecology, maternity
+                                and pediatric services — delivered with compassion, safety and personalized attention.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a class="btn btn-light rounded-pill py-3 px-5 fw-semibold" href="contact.html"><i
+                                        class="fa fa-calendar-check me-2"></i>Book Appointment</a>
+                                <a class="btn btn-outline-light rounded-pill py-3 px-5 fw-semibold"
+                                    href="about.html">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide" style="background-image: url('img/slider-2-ARRHospital.jpg');">
+            <div class="hero-caption py-5">
+                <div class="container">
+                    <div class="row align-items-center py-5">
+                        <div class="col-lg-7 animated fadeInLeft">
+                            <h5 class="text-white text-uppercase fw-semibold mb-3"
+                                style="letter-spacing:2px; opacity:0.85;">Gynaecology & Maternity</h5>
+                            <h1 class="display-3 fw-bold text-white mb-4" style="line-height:1.15;">Safe
+                                Motherhood,<br>Every Step of the Way</h1>
+                            <p class="fs-5 mb-4" style="color:rgba(255,255,255,0.88);">From antenatal care to safe
+                                deliveries and postnatal support — led by Dr. S. Rajeswari, MD (OG).</p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a class="btn btn-light rounded-pill py-3 px-5 fw-semibold" href="gynaecology.html"><i
+                                        class="fa fa-info-circle me-2"></i>Our Services</a>
+                                <a class="btn btn-outline-light rounded-pill py-3 px-5 fw-semibold"
+                                    href="contact.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide" style="background-image: url('img/slider-3-ARRHospital.jpg');">
+            <div class="hero-caption py-5">
+                <div class="container">
+                    <div class="row align-items-center py-5">
+                        <div class="col-lg-7 animated fadeInLeft">
+                            <h5 class="text-white text-uppercase fw-semibold mb-3"
+                                style="letter-spacing:2px; opacity:0.85;">Child Care & Pediatrics</h5>
+                            <h1 class="display-3 fw-bold text-white mb-4" style="line-height:1.15;">Growing
+                                Healthy,<br>Growing Happy</h1>
+                            <p class="fs-5 mb-4" style="color:rgba(255,255,255,0.88);">Dedicated pediatric and neonatal
+                                care in a warm, child-friendly environment with round-the-clock support.</p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a class="btn btn-light rounded-pill py-3 px-5 fw-semibold" href="pediatrics.html"><i
+                                        class="fa fa-info-circle me-2"></i>Pediatrics</a>
+                                <a class="btn btn-outline-light rounded-pill py-3 px-5 fw-semibold"
+                                    href="contact.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Hero Slider End -->
+
+
+    <!-- ABOUT US SECTION -->
+    <div class="container-fluid bg-light about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-item-content bg-white rounded p-5 h-100">
+                        <h6 class="text-primary">About ARR Hospital</h6>
+                        <h2 class="mb-4">Reliable care for women and children you can trust</h2>
+                        <p>ARR Hospital is a trusted healthcare center in Tuticorin offering specialized services for
+                            women and children. We focus on providing safe, effective and comfortable care from
+                            pregnancy to child development.</p>
+                        <p>Under the leadership of Dr. S. Rajeswari, MD (OG), our hospital ensures every patient
+                            receives the right care at the right time. We are committed to supporting families with
+                            compassion, expertise and attention to detail.</p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="about.html">Learn More About Us</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="bg-white rounded p-4 h-100 d-flex align-items-center">
+                        <img src="img/Arr Hospital Entrance.jpeg" class="img-fluid rounded w-100" alt="ARR Hospital">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- COUNTER / STATS SECTION -->
+    <div class="container-fluid py-5"
+        style="position:relative; background: url('img/Picture 4.jpeg') center center / cover no-repeat fixed;">
+        <div style="position:absolute; inset:0; background:rgba(0,20,60,0.78); z-index:0;"></div>
+        <div style="position:relative; z-index:1;">
+            <div class="container py-4">
+                <div class="row g-4 justify-content-center text-center">
+                    <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4">
+                            <div class="counter-counting mb-2">
+                                <span class="text-white display-5 fw-bold" data-toggle="counter-up">10</span>
+                                <span class="display-5 fw-bold text-white">+</span>
+                            </div>
+                            <h5 class="text-white mb-0">Years of Experience</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="p-4">
+                            <div class="counter-counting mb-2">
+                                <span class="text-white display-5 fw-bold" data-toggle="counter-up">2000</span>
+                                <span class="display-5 fw-bold text-white">+</span>
+                            </div>
+                            <h5 class="text-white mb-0">Patients Treated</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="p-4">
+                            <div class="counter-counting mb-2">
+                                <span class="text-white display-5 fw-bold" data-toggle="counter-up">1000</span>
+                                <span class="display-5 fw-bold text-white">+</span>
+                            </div>
+                            <h5 class="text-white mb-0">Successful Deliveries</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="p-4">
+                            <div class="counter-counting mb-2">
+                                <span class="text-white display-5 fw-bold" data-toggle="counter-up">15</span>
+                                <span class="display-5 fw-bold text-white">+</span>
+                            </div>
+                            <h5 class="text-white mb-0">Expert Doctors & Staff</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter Section End -->
+
+
+    <!-- OUR SPECIALITIES SECTION -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Our Specialities</h4>
+                <h1 class="display-5 mb-4">Expert Care for Women & Children</h1>
+                <p class="mb-0">At ARR Hospital, we specialize in providing comprehensive healthcare services for women
+                    and children, ensuring safety, comfort, and personalized care at every stage.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+
+                <!-- Gynaecology -->
+                <div class="col-md-6 col-lg-6 col-xl-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/gynaecology.jpeg" class="img-fluid rounded-top w-100" alt="Gynaecology">
+                            <div class="service-icon p-3">
+                                <i class="fa fa-user-md fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="gynaecology.html" class="d-inline-block h4 mb-3">Gynaecology & Maternity
+                                    Care</a>
+                                <p class="mb-4">Comprehensive care for women at every stage of life, including pregnancy
+                                    care, safe deliveries, infertility treatment and menstrual health management.</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="gynaecology.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pediatrics -->
+                <div class="col-md-6 col-lg-6 col-xl-5 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-img">
+                            <img src="img/pediatrics.jpeg" class="img-fluid rounded-top w-100" alt="Pediatrics">
+                            <div class="service-icon p-3">
+                                <i class="fa fa-child fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="service-content p-4">
+                            <div class="service-content-inner">
+                                <a href="pediatrics.html" class="d-inline-block h4 mb-3">Child Care & Pediatrics</a>
+                                <p class="mb-4">Specialized care for newborns, infants and children including
+                                    vaccinations, growth monitoring and 24/7 pediatric support in a child-friendly
+                                    environment.</p>
+                                <a class="btn btn-primary rounded-pill py-2 px-4" href="pediatrics.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Specialities End -->
+
+
+    <!-- CHIEF DOCTOR'S MESSAGE -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+
+                <!-- Message -->
+                <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.2s">
+                    <h4 class="text-primary">Chief Doctor's Message</h4>
+                    <h2 class="mb-4">A word from our lead specialist</h2>
+                    <div class="bg-white rounded p-4 p-lg-5 shadow-sm"
+                        style="border-left: 5px solid var(--bs-primary);">
+                        <span class="quote-icon d-block mb-2"
+                            style="font-size:3.5rem; color:var(--bs-primary); opacity:0.18; line-height:1;">&#8220;</span>
+                        <p class="fs-5 mb-3" style="font-style:italic; color:#333;">
+                            Caring for mothers and children is not just our profession — it is our responsibility and
+                            privilege. At ARR Hospital, we strive to create a safe and comforting environment where
+                            every family feels supported.
+                        </p>
+                        <p class="mb-4" style="color:#555;">
+                            From the first consultation to every milestone that follows, we stand by your side with
+                            dedication and compassion. Your trust inspires us to deliver the best care possible every
+                            day.
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <h5 class="mb-0 text-primary">Dr. S. Rajeswari</h5>
+                                <p class="mb-0 text-muted small">MD (OG) — Obstetrician & Gynaecologist</p>
+                                <p class="mb-0 text-muted small">Chief of Gynaecology, ARR Hospital</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor Photo -->
+                <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="doctor-message-img">
+                        <img src="img/Dr. Rajeshwari.jpg" alt="Dr. S. Rajeswari – Chief Gynaecologist, ARR Hospital">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Chief Doctor's Message End -->
+
+
+    <!-- OUR MEDICAL EXPERTS -->
+    <div class="container-fluid py-5"
+        style="position:relative; background: url('img/Picture 3.jpeg') center center / cover no-repeat fixed;">
+        <!-- overlay -->
+        <div style="position:absolute; inset:0; background:rgba(0,20,60,0.78); z-index:0;"></div>
+        <div style="position:relative; z-index:1;">
+            <div class="container py-5">
+
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width:700px;">
+                    <h4 style="color:#7eb8ff;">Our Medical Experts</h4>
+                    <h2 class="text-white mb-3">Caring hands and experienced minds</h2>
+                    <p class="text-white" style="opacity:0.80;">For you and your family</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="doctor-card">
+                            <div class="doctor-icon-wrap"><i class="fa fa-user-md"></i></div>
+                            <h5>Dr. S. Rajeswari</h5>
+                            <p>MD (OG)<br>Obstetrician & Gynaecologist</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="doctor-card">
+                            <div class="doctor-icon-wrap"><i class="fa fa-baby"></i></div>
+                            <h5>Dr. Divakar</h5>
+                            <p>MD, DNB<br>Pediatrician</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="doctor-card">
+                            <div class="doctor-icon-wrap"><i class="fa fa-stethoscope"></i></div>
+                            <h5>Dr. Sriram Kanagavel</h5>
+                            <p>MS, MCh<br>Pediatric Surgeon</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="doctor-card">
+                            <div class="doctor-icon-wrap"><i class="fa fa-procedures"></i></div>
+                            <h5>Dr. Deivanathan</h5>
+                            <p>MS<br>General Surgeon</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="doctor-card">
+                            <div class="doctor-icon-wrap"><i class="fa fa-heartbeat"></i></div>
+                            <h5>Dr. Meenachi Sundaram</h5>
+                            <p>MD<br>General Physician</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="doctor-card">
+                            <div class="doctor-icon-wrap"><i class="fa fa-heart"></i></div>
+                            <h5>Dr. Sahaya Francis Akiston</h5>
+                            <p>MD, DM<br>Cardiologist</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Medical Experts End -->
+
+
+    <!-- EXPERIENCE THE ARR DIFFERENCE -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width:800px;">
+                <h4 class="text-primary">Experience the ARR Difference</h4>
+                <h2 class="display-5 mb-4">Where Clinical Excellence Meets Compassionate Care</h2>
+            </div>
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="diff-item">
+                        <div class="diff-check"><i class="fa fa-check"></i></div>
+                        <div>
+                            <h5 class="mb-1">Experienced Specialists</h5>
+                            <p class="mb-0 text-muted small">Skilled doctors dedicated to women's and child healthcare.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="diff-item">
+                        <div class="diff-check"><i class="fa fa-check"></i></div>
+                        <div>
+                            <h5 class="mb-1">Safe & Monitored Care</h5>
+                            <p class="mb-0 text-muted small">Advanced monitoring ensures safety for both mother and
+                                child.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="diff-item">
+                        <div class="diff-check"><i class="fa fa-check"></i></div>
+                        <div>
+                            <h5 class="mb-1">Modern Facilities</h5>
+                            <p class="mb-0 text-muted small">Well-equipped labour ward, operation theatre and
+                                diagnostics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="diff-item">
+                        <div class="diff-check"><i class="fa fa-check"></i></div>
+                        <div>
+                            <h5 class="mb-1">24/7 Emergency Support</h5>
+                            <p class="mb-0 text-muted small">Round-the-clock care when you need it the most.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="diff-item">
+                        <div class="diff-check"><i class="fa fa-check"></i></div>
+                        <div>
+                            <h5 class="mb-1">Personalized Attention</h5>
+                            <p class="mb-0 text-muted small">Individual care plans tailored to every patient's needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="diff-item">
+                        <div class="diff-check"><i class="fa fa-check"></i></div>
+                        <div>
+                            <h5 class="mb-1">Child-Friendly Environment</h5>
+                            <p class="mb-0 text-muted small">Comfortable and welcoming spaces designed for children.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ARR Difference End -->
+
+
+    <!-- OUR INFRASTRUCTURE -->
+    <div class="container-fluid service py-5">
+        <div class="container py-5">
+
+            <!-- Section Header -->
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width:800px;">
+                <h4 class="text-primary">Our Infrastructure</h4>
+                <h2 class="display-5 mb-4">A Space Built for Healing</h2>
+                <p class="mb-0">
+                    ARR Hospital is equipped with advanced infrastructure to provide high-quality care for women and
+                    children. Our facility includes a modern labour ward, well-equipped operation theatre and dedicated
+                    spaces for maternal and child care.
+                </p>
+            </div>
+
+            <!-- Infrastructure Description Row -->
+            <div class="row g-5 align-items-center mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-8 mx-auto">
+                    <div class="bg-white rounded p-4 p-lg-5 shadow-sm text-center">
+                        <p class="fs-5 mb-0" style="color:#555; line-height:1.85;">
+                            With 24/7 diagnostic services, in-house pharmacy and a patient-friendly environment, we
+                            ensure every aspect of care is efficient, safe and comfortable for our patients and their
+                            families.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infrastructure Feature Icons -->
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-6 col-md-4 col-lg-2 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="bg-white rounded p-3 shadow-sm h-100">
+                        <div class="mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-primary text-white"
+                            style="width:56px;height:56px;">
+                            <i class="fa fa-hospital fa-lg"></i>
+                        </div>
+                        <p class="mb-0 small fw-semibold">Modern Labour Ward</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="bg-white rounded p-3 shadow-sm h-100">
+                        <div class="mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-primary text-white"
+                            style="width:56px;height:56px;">
+                            <i class="fa fa-procedures fa-lg"></i>
+                        </div>
+                        <p class="mb-0 small fw-semibold">Operation Theatre</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-white rounded p-3 shadow-sm h-100">
+                        <div class="mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-primary text-white"
+                            style="width:56px;height:56px;">
+                            <i class="fa fa-microscope fa-lg"></i>
+                        </div>
+                        <p class="mb-0 small fw-semibold">24/7 Diagnostics</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="bg-white rounded p-3 shadow-sm h-100">
+                        <div class="mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-primary text-white"
+                            style="width:56px;height:56px;">
+                            <i class="fa fa-pills fa-lg"></i>
+                        </div>
+                        <p class="mb-0 small fw-semibold">In-house Pharmacy</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-white rounded p-3 shadow-sm h-100">
+                        <div class="mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-primary text-white"
+                            style="width:56px;height:56px;">
+                            <i class="fa fa-baby fa-lg"></i>
+                        </div>
+                        <p class="mb-0 small fw-semibold">Neonatal Unit</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="bg-white rounded p-3 shadow-sm h-100">
+                        <div class="mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle bg-primary text-white"
+                            style="width:56px;height:56px;">
+                            <i class="fa fa-ambulance fa-lg"></i>
+                        </div>
+                        <p class="mb-0 small fw-semibold">Emergency Services</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infrastructure Image Carousel -->
+            <div class="infra-carousel-wrap wow fadeInUp" data-wow-delay="0.3s">
+                <div class="infra-carousel owl-carousel">
+                    <div class="px-2">
+                        <img src="img/Picture 1.jpeg" class="img-fluid w-100" alt="ARR Hospital Infrastructure">
+                    </div>
+                    <div class="px-2">
+                        <img src="img/Picture 2.jpeg" class="img-fluid w-100" alt="ARR Hospital Labour Ward">
+                    </div>
+                    <div class="px-2">
+                        <img src="img/Picture 3.jpeg" class="img-fluid w-100" alt="ARR Hospital Operation Theatre">
+                    </div>
+                    <div class="px-2">
+                        <img src="img/Picture 4.jpeg" class="img-fluid w-100" alt="ARR Hospital Patient Area">
+                    </div>
+                    <div class="px-2">
+                        <img src="img/Picture 5.jpeg" class="img-fluid w-100" alt="ARR Hospital Facilities">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Infrastructure End -->
+
+
+    <!-- FOOTER -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Column 1: About -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0 d-inline-block mb-3"><img src="img/ARR Hospital - Tuticorin.png"
+                                alt="ARR Hospital Logo" class="footer-logo"></a>
+                        <p class="text-white mb-4">
+                            ARR Hospital provides trusted and compassionate care for women and children, ensuring safe
+                            motherhood and healthy childhood at every stage.
+                        </p>
+                        <div class="footer-btn d-flex">
+                            <a class="btn btn-md-square rounded-circle me-3" href="https://www.facebook.com/p/ARR-Hospital-100064145854622/"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <a class="btn btn-md-square rounded-circle me-3" href="https://instagram.com/#arrhospital"><i
+                                    class="fab fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Quick Access</h4>
+                        <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="gynaecology.html"><i class="fas fa-angle-right me-2"></i> Gynaecology</a>
+                        <a href="pediatrics.html"><i class="fas fa-angle-right me-2"></i> Pediatrics</a>
+                        <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                    </div>
+                </div>
+                <!-- Column 3: Contact -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Contact Us</h4>
+                        <div class="d-flex mb-4">
+                            <div class="footer-contact-icon bg-primary text-white me-3 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white">Address</h5>
+                                <p class="mb-0">4M, 183/4, Muthammal Colony,<br>3rd Street Extension,<br>Tuticorin –
+                                    628002</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="footer-contact-icon bg-primary text-white me-3 flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white">Mail Us</h5>
+                                <p class="mb-0">arrhospitalindia@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="footer-contact-icon bg-primary text-white me-3 flex-shrink-0">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white">Telephone</h5>
+                                <p class="mb-0">+91 83006 46102</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>2026 ARR Hospital</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-start text-body">
+                    Designed By <img src="img/shen-admin-bar-logo.png"> <a class="border-bottom text-white"
+                        href="https://shentechnology.com/">SHEN Technology, INDIA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Hero Slider & Infrastructure Carousel Init -->
+    <script>
+        $(document).ready(function () {
+            // Hero Image Slider
+            $('#heroSlider').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: false,
+                smartSpeed: 800,
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 1 },
+                    1024: { items: 1 }
+                }
+            });
+
+            // Infrastructure Carousel — 3 desktop, 3 tablet, 2 mobile
+            $('.infra-carousel').owlCarousel({
+                loop: true,
+                margin: 16,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3500,
+                autoplayHoverPause: true,
+                smartSpeed: 600,
+                navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+                responsive: {
+                    0: { items: 2 },
+                    768: { items: 3 },
+                    992: { items: 3 }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

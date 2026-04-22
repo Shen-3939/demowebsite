@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ARR Hospital</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="keywords" content="ARR Hospital, Gynaecologist in Tuticorin, Child Care Hospital, Maternity Hospital">
+    <meta name="description"
+        content="ARR Hospital provides expert care for women and children including pregnancy, delivery and pediatric services in Tuticorin.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Arr hospital favicon.png">
+    <link rel="apple-touch-icon" href="img/Arr hospital favicon.png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .bg-breadcrumb {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(1, 95, 201, 0.7), rgba(105, 105, 105, 0.5)), url(./img/Contact-us-banner.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 60px 0 60px 0;
+            transition: 0.5s;
+        }
+
+        /* Contact Form Notification */
+        .form-notification {
+            display: none;
+            padding: 14px 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-top: 16px;
+            animation: slideUp 0.4s ease;
+        }
+
+        .form-notification.success {
+            display: block;
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            color: #155724;
+            border: 1px solid #b1dfbb;
+        }
+
+        .form-notification.error {
+            display: block;
+            background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .form-notification i {
+            margin-right: 8px;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="index.html" class="navbar-brand p-0"><img src="img/ARR Hospital - Tuticorin.png"
+                        alt="ARR Hospital Logo" class="navbar-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-0 mx-lg-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                <span class="dropdown-toggle">Our Specialities</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="gynaecology.html" class="dropdown-item">Gynaecology</a>
+                                <a href="pediatrics.html" class="dropdown-item">Pediatrics</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                    <a href="tel:+918300646102"
+                        class="btn btn-light btn-lg-square rounded-circle position-relative wow tada"
+                        data-wow-delay=".9s">
+                        <i class="fa fa-phone-alt"></i>
+                        <div class="position-absolute" style="top: 7px; right: 12px;">
+                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                        </div>
+                    </a>
+                    <div class="d-flex flex-column ms-3">
+                        <span>Call to Our Experts</span>
+                        <a href="tel:+91 8300646102"><span class="text-dark">+91 83006 46102</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h4>
+            <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+
+                <li class="breadcrumb-item active text-primary">Contact</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid contact bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-primary">Contact Us</h4>
+                <h1 class="display-5 mb-4">We’re Here to Help You & Your Family</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="contact-img d-flex justify-content-center">
+                        <div class="contact-img-inner">
+                            <img src="img/doctor.png" class="img-fluid w-100" alt="Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                    <div>
+                        <h4 class="lh-base mb-4">Have questions or need an appointment? Fill out the form and our team
+                            will get back to you shortly.</h4>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="name" name="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control border-0" id="email" name="email"
+                                            placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control border-0" id="phone" name="phone"
+                                            placeholder="Phone" required>
+                                        <label for="phone">Your Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-xl-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control border-0" id="subject" name="subject"
+                                            placeholder="Subject" required>
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control border-0" placeholder="Leave a message here"
+                                            id="message" name="message" style="height: 120px" required></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100 py-3" id="submitBtn">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                            <!-- Notification Area -->
+                            <div id="formNotification" class="form-notification"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row g-4 justify-content-center">
+                        <!-- Address Card -->
+                        <div class="col-sm-10 col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="contact-info-card text-center">
+                                <div class="contact-info-icon mx-auto mb-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <h5 class="mb-2">Address</h5>
+                                <p class="mb-0">4M, 183/4, Muthammal Colony,<br>
+                                    3rd Street Extension,<br>
+                                    Tuticorin – 628002</p>
+                            </div>
+                        </div>
+                        <!-- Mail Card -->
+                        <div class="col-sm-10 col-md-4 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="contact-info-card text-center">
+                                <div class="contact-info-icon mx-auto mb-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h5 class="mb-2">Mail Us</h5>
+                                <p class="mb-0"><a
+                                        href="mailto:arrhospitalindia@gmail.com">arrhospitalindia@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Phone Card -->
+                        <div class="col-sm-10 col-md-4 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="contact-info-card text-center">
+                                <div class="contact-info-icon mx-auto mb-3">
+                                    <i class="fa fa-phone-alt"></i>
+                                </div>
+                                <h5 class="mb-2">Telephone</h5>
+                                <p class="mb-0"><a href="tel:+918300646102">+91 83006 46102</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="rounded">
+                        <iframe class="rounded w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.6583945073126!2d78.1252027!3d8.8181268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ef9428faef4b%3A0xa29ac1f35643eddc!2sARR%20HOSPITAL!5e0!3m2!1sen!2sin!4v1776445230626!5m2!1sen!2sin"
+                            style="height: 400px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Column 1: About -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <a href="index.html" class="p-0 d-inline-block mb-3"><img src="img/ARR Hospital - Tuticorin.png"
+                                alt="ARR Hospital Logo" class="footer-logo"></a>
+                        <p class="text-white mb-4">ARR Hospital provides trusted and compassionate care for women and
+                            children, ensuring safe motherhood and healthy childhood at every stage.
+
+                        </p>
+                        <div class="footer-btn d-flex">
+                            <a class="btn btn-md-square rounded-circle me-3" href="https://www.facebook.com/p/ARR-Hospital-100064145854622/"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <a class="btn btn-md-square rounded-circle me-3" href="https://instagram.com/#arrhospital"><i
+                                    class="fab fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Quick Access</h4>
+                        <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="gynaecology.html"><i class="fas fa-angle-right me-2"></i> Gynaecology</a>
+                        <a href="pediatrics.html"><i class="fas fa-angle-right me-2"></i> Pediatrics</a>
+                        <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                    </div>
+                </div>
+                <!-- Column 3: Contact Details -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Contact Us</h4>
+                        <div class="d-flex mb-4">
+                            <div class="footer-contact-icon bg-primary text-white me-3 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white">Address</h5>
+                                <p class="mb-0">4M, 183/4, Muthammal Colony,<br>
+                                    3rd Street Extension,<br>
+                                    Tuticorin – 628002</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="footer-contact-icon bg-primary text-white me-3 flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white">Mail Us</h5>
+                                <p class="mb-0">arrhospitalindia@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="footer-contact-icon bg-primary text-white me-3 flex-shrink-0">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-white">Telephone</h5>
+                                <p class="mb-0">+91 83006 46102</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>2026 ARR Hospital</a>, All right
+                        reserved.</span>
+                </div>
+                <div class="col-md-6 text-center text-md-start text-body">
+                    Designed By <img src="img/shen-admin-bar-logo.png"> <a class="border-bottom text-white"
+                        href="https://shentechnology.com/">SHEN Technology, INDIA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Contact Form Submission -->
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').on('submit', function (e) {
+                e.preventDefault();
+
+                var $btn = $('#submitBtn');
+                var $notification = $('#formNotification');
+                var originalText = $btn.text();
+
+                // Disable button & show loading
+                $btn.prop('disabled', true).html('<i class="fa fa-spinner fa-spin me-2"></i>Sending...');
+                $notification.removeClass('success error').hide();
+
+                $.ajax({
+                    url: 'send_mail.php',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    dataType: 'json',
+                    success: function (response) {
+                        if (response.status === 'success') {
+                            $notification
+                                .removeClass('error')
+                                .addClass('success')
+                                .html('<i class="fa fa-check-circle"></i>' + response.message)
+                                .show();
+                            $('#contactForm')[0].reset();
+                        } else {
+                            $notification
+                                .removeClass('success')
+                                .addClass('error')
+                                .html('<i class="fa fa-exclamation-circle"></i>' + response.message)
+                                .show();
+                        }
+                    },
+                    error: function () {
+                        $notification
+                            .removeClass('success')
+                            .addClass('error')
+                            .html('<i class="fa fa-exclamation-circle"></i>Something went wrong. Please try again later.')
+                            .show();
+                    },
+                    complete: function () {
+                        $btn.prop('disabled', false).text(originalText);
+                        // Auto-hide notification after 8 seconds
+                        setTimeout(function () {
+                            $notification.fadeOut(400);
+                        }, 8000);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
